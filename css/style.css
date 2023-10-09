@@ -248,6 +248,11 @@ button:focus {
 
 .experience-wrapper {
     height: 100vh;
+
+}
+
+.about-header-wrapper {
+    margin-bottom: 100px;
 }
 
 
