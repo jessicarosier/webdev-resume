@@ -6,63 +6,115 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <title>Welcome</title>
+  <title>Jessica Rosier</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <div class="page-wrapper">
-  <div class="nav-wrapper">
-    <nav class="nav d-flex justify-content-center">
-      <ul class="nav-links d-flex list-unstyled mb-0">
-        <li><a class="text-decoration-none text-black text-uppercase" href="#">About</a></li>
-        <li><a class="text-decoration-none text-black text-uppercase" href="#">Experience</a></li>
-        <li><a class="text-decoration-none text-black text-uppercase" href="#">Projects</a></li>
-        <li><a class="text-decoration-none text-black text-uppercase" href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
+
+  <nav class="nav d-flex justify-content-center">
+    <ul class="nav-links d-flex list-unstyled mb-0">
+      <li><a class="text-decoration-none text-black text-uppercase" href="#"> < About > </a></li>
+      <li><a class="text-decoration-none text-black text-uppercase" href="#experience"> < Experience > </a></li>
+      <li><a class="text-decoration-none text-black text-uppercase" href="#projects"> < Projects > </a></li>
+      <li><a class="text-decoration-none text-black text-uppercase" href="#"> < Contact> </a></li>
+    </ul>
+  </nav>
+
   <main class="container">
-    <div class="row">
-      <div class="col d-flex flex-column justify-content-center align-items-center main-intro">
-        <div class="d-flex">
-          <span class="my-name">J</span>
-          <span class="my-name">e</span>
-          <span class="my-name">s</span>
-          <span class="my-name">s</span>
-          <span class="my-name">i</span>
-          <span class="my-name">c</span>
-          <span class="my-name">a</span>
-          <span class="my-name">R</span>
-          <span class="my-name">o</span>
-          <span class="my-name">s</span>
-          <span class="my-name">i</span>
-          <span class="my-name">e</span>
-          <span class="my-name">r</span>
-        </div>
-        <div class="my-name-nav d-flex justify-content-center align-items-center">
+    <div class="d-flex align-items-center main-wrapper">
+      <div class="col d-flex flex-column main-intro">
+        <div class="my-name-nav d-flex justify-content-between align-items-center">
+          <div class="d-flex flex-column" id="name">
+            Jessica Rosier
+
+            <div id="about-me"></div>
+
+          </div>
           <div class="headshot-wrapper d-inline-block position-relative overflow-hidden object-fit-cover">
             <img class="w-100" src="img/headshot.jpg" alt="professional-headshot">
           </div>
         </div>
+
       </div>
     </div>
-
-
-    <div class="project-card d-flex align-items-center gap-2"
-    >
-      <a href="#"><img src="img/github.svg" class="git-img"></a>
-
-      <p>Project description goes here</p>
-
-
+    <!--    project cards container   -->
+    <p class="header-title" id="projects"> < projects > </p>
+    <div class="projects-container">
     </div>
+    <!--    end project cards container   -->
+
+    <!--    experience    -->
+    <section>
+      <div class="row experience-wrapper" id="experience">
+        <div class="d-flex justify-content-center">
+          <p class="header-title"> < experience > </p>
+        </div>
+        <div class="col">
+          <div class="d-flex justify-content-center">
+            <div class="headshot-wrapper d-inline-block position-relative overflow-hidden object-fit-cover">
+              <img class="w-100" src="img/usn.jpeg" alt="professional-headshot">
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="d-flex justify-content-center">
+            <p> Meet Jessica Rosier, the coding maestro with a knack for conquering both keyboards and combat zones.
+              🚀🌐
+              <br>
+              <br>
+              By day, Jessica is an enthusiastic software developer on a mission to decode the digital world. With a
+              toolbox filled with skills such as HMTL, CSS, Javascript, Java, Spring, and more, she's always ready to
+              tackle the
+              latest tech challenges.
+              <br>
+
+              Before diving into the world of web development, she voyaged across the seas while serving in the
+              United States Navy where she was an Information Systems Technician where she managing vast networks and
+              ensured optimal performance of all systems.
+<br>
+              <br>
+              From untangling server cables to unraveling the mysteries of code, this former system administrator is now
+              the Sherlock Holmes of software development, solving bugs instead of crimes! 🕵️‍♂️💻
+              <br>
+
+
+              <br>
+              So, whether she's crushing code or sailing the ocean blue, Jessica is the tech-savvy problem solver you
+              want
+              on
+              your
+              team!
+              </p>
+          </div>
+        </div>
+      </div>
+
+
+      <footer>
+        <div class="footer-container">
+          <div class="row">
+            <div class="col">
+              <div class="d-flex justify-content-center">
+                <p class="footer-text">Jessica Rosier</p>
+                <a href="https://www.linkedin.com/in/jessica-rosier/"
+                   target="_blank"><img class="contact-img" src="img/linkedin.svg"></a>
+                <a href="mailto:jessica.c.rosier1@gmail.com" target="_blank"><img class="contact-img"
+                                                                                  src="img/gmail.svg"
+                > </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
   </main>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-<script type="module" src="js/main.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

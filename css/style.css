@@ -1,3 +1,17 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+video {
+    max-width: 100%;
+}
 
 .page-wrapper {
     display: flex;
@@ -5,13 +19,44 @@
     min-height: 100vh;
 }
 
+
 .nav-wrapper {
-    background-color: lightblue;
     padding: 25px 0;
 }
 
 .nav {
     margin: 10px 40px;
+}
+
+.main-wrapper {
+    height: 100vh;
+}
+
+#about-me {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: white;
 }
 
 
@@ -29,6 +74,7 @@
 
 .nav-links {
     gap: 50px;
+    font-size: 20px;
 }
 
 
@@ -36,28 +82,30 @@ a:hover {
     font-weight: bolder;
 }
 
-.my-name {
+.my-name-nav {
     text-transform: uppercase;
     letter-spacing: 10px;
     font-size: 100px;
 }
 
+#name {
+    font-family: "Baloo Bhai 2";
+}
+
 .main-intro {
-    padding-top: 3em;
+    padding: 30px;
+    width: 100%;
 }
 
-
-.project-card {
-    width: 300px;
-    height: 300px;
-    margin: 20px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: #0a58ca;
-    border-radius: 10px;
+.header-title {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 50px;
+    text-transform: uppercase;
 }
+
 
 .git-img {
     width: 50px;
@@ -65,7 +113,149 @@ a:hover {
 }
 
 .git-img:hover {
-    transform: scale(1.5);
-    
+    transform: scale(1.05);
 }
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    gap: 20px;
+}
+
+
+.project-card {
+    width: 500px;
+    height: 300px;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #45A049;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+button:focus {
+    outline: none;
+}
+
+
+/* Styles for the modal */
+
+.modal-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    transition: all ease 0.3s;
+    z-index: 999;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: center;
+}
+
+.modal-content {
+    position: relative;
+    width: 90%;
+    height: 90%;
+    padding: 30px;
+    border-radius: 20px;
+    transition: all ease 0.3s;
+}
+
+.modal-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-video {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+
+.contact-img {
+    width: 100px;
+    height: 100px;
+}
+
+.projects-container {
+    height: 100vh;
+}
+
+.experience-wrapper {
+    height: 100vh;
+}
+
+
+
+
+
+
+
+
+
 
