@@ -1,5 +1,4 @@
 //TODO: style/format project cards
-//TODO: add project descriptions to cards, on hover overlay slides up to reveal description
 //TODO: add project demo links to cards, on hover overlay slides up to reveal demo link
 
 console.log("Hello there!");
@@ -32,17 +31,17 @@ let projects = [
     },
 
     {
-        name: "Tic Tac Toe",
-        description: "This is a simple tic tac toe game created using HTML, CSS, and JavaScript. The game allows two players to play against each other and keeps track of the score. This project was completed in 3 days.",
-        demo: "video/tic-tac-toe-demo.mp4",
-        github: "https://github.com/jessicarosier/tic-tac-toe"
-    },
-
-    {
         name: "Weather Map",
         description: "This is a weather app created using HTML, CSS, and JavaScript. The app uses the OpenWeatherMap API to retrieve weather data for a given location as well as the MapBox API to display a map of the location. This project was completed in 3 days.",
         demo: "video/weather-map-demo.mp4",
         github: ""
+    },
+
+    {
+        name: "Tic Tac Toe",
+        description: "This is a simple tic tac toe game created using HTML, CSS, and JavaScript. The game allows two players to play against each other and keeps track of the score. This project was completed in 3 days.",
+        demo: "video/tic-tac-toe-demo.mp4",
+        github: "https://github.com/jessicarosier/tic-tac-toe"
     },
 
     {

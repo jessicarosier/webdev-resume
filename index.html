@@ -13,8 +13,43 @@
 </head>
 <body>
 <div class="page-wrapper">
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-white p-4">
+      <ul
+          class="d-flex list-unstyled gap-3 align-items-center justify-content-center mb-0 text-uppercase"
+      >
+        <li>
+          <a class="text-decoration-none text-black text-uppercase" href="#">about</a>
+        </li>
+        <li>
+          <a class="text-decoration-none text-black text-uppercase" href="#">projects</a>
+        </li>
+        <li>
+          <a class="text-decoration-none text-black text-uppercase" href="#">contacts</a>
+        </li>
 
-  <nav class="nav d-flex justify-content-center">
+      </ul>
+    </div>
+  </div>
+  <nav class="navbar navbar-light d-block d-lg-none sec-font">
+    <div class="container-fluid d-flex justify-content-between">
+      <img src="img/code-2-svgrepo-com.svg" style="height: 100px; width: 100px">
+      <button
+          class="navbar-toggler border border-secondary"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarToggleExternalContent"
+          aria-controls="navbarToggleExternalContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+
+
+  <nav class="nav d-none d-lg-flex justify-content-center">
     <ul class="nav-links d-flex list-unstyled mb-0">
       <li
       ><a class="text-decoration-none text-black text-uppercase" href="#"> < back to top >
@@ -26,8 +61,8 @@
   </nav>
 
   <main class="container">
-    <div class="d-flex align-items-center main-wrapper">
-      <div class="col d-flex flex-column main-intro">
+    <div class="flex-lg-row flex-column justify-content-center align-items-center main-wrapper">
+      <div class="row flex-md-column  main-intro justify-content-center align-items-center">
         <div class="my-name-nav d-flex justify-content-between align-items-center">
           <div class="d-flex flex-column" id="name">
             Jessica Rosier
@@ -44,14 +79,15 @@
     </div>
     <!--    project cards container   -->
     <p class="header-title" id="projects"> < projects > </p>
-    <div class="projects-container">
+    <div class="projects-container d-flex flex-column flex-lg-row h-100">
     </div>
     <!--    end project cards container   -->
 
     <!--    experience    -->
-    <section class="experience-wrapper d-flex justify-content-center align-items-center" id="about">
+    <section class="experience-wrapper d-flex justify-content-center align-items-center"
+             id="about">
       <div class="row">
-        <div class="d-flex flex-column justify-content-center flex-md-row about-header-wrapper">
+        <div class="d-flex flex-row justify-content-center about-header-wrapper">
           <p class="header-title"> < about me > </p>
         </div>
         <div class="col d-flex align-items-center justify-content-center">
@@ -61,12 +97,12 @@
         </div>
         <div class="col d-flex align-items-center justify-content-center">
           <div class="d-flex justify-content-center">
-            <p> Meet Jessica Rosier, the coding enthusiast with a knack for conquering both keyboards and combat zones.
+            <p> Meet Jessica Rosier, a coding enthusiast with a knack for conquering both keyboards and combat zones.
               🚀🌐
               <br>
               <br>
               By day, Jessica is an enthusiastic full stack software developer on a mission to decode the digital
-              world. With a toolbox filled with skills including HMTL, CSS, Javascript, Java, Spring, and more, she's
+              world. With a toolbox filled with skills including HMTL, CSS, Javascript, Java, and more, she's
               always ready to
               tackle the latest tech challenges.
               <br>
@@ -92,7 +128,7 @@
 
     <footer>
       <div class="footer-container" id="contact">
-        <div class="row">
+        <div class="flex-lg-row flex-column">
           <div class="d-flex flex-column justify-content-center flex-md-row about-header-wrapper">
             <p class="header-title"> < contact me > </p>
           </div>
