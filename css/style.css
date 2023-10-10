@@ -91,9 +91,22 @@ a:hover {
     font-size: 100px;
 }
 
+@media screen and (max-width: 600px) {
+    .my-name-nav {
+        font-size: 50px;
+    }
+}
+
 #name {
     font-family: "Baloo Bhai 2";
 }
+
+@media screen and (max-width: 780px) {
+    #name {
+        text-align: center;
+    }
+}
+
 
 .main-intro {
     padding: 30px;
