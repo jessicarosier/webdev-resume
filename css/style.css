@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
+:root {
+    --heading-font: 'Ubuntu', sans-serif;
+}
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -98,7 +105,7 @@ a:hover {
 }
 
 #name {
-    font-family: "Baloo Bhai 2";
+    font-family: var(--heading-font);
 }
 
 
