@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+
 :root {
     --heading-font: 'Ubuntu', sans-serif;
+    --font: 'Shadows Into Light', sans-serif;
+
 }
 
 
@@ -9,6 +14,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-size: 18px;
 }
 
 p {
@@ -49,6 +58,7 @@ video {
     text-transform: uppercase;
     font-size: 30px;
     animation: fadeIn 1s ease-in-out;
+    /*font-family: var(--test);*/
 }
 
 @keyframes fadeIn {
@@ -105,7 +115,7 @@ a:hover {
 }
 
 #name {
-    font-family: var(--heading-font);
+    font-family: var(--font);
 }
 
 
@@ -155,6 +165,7 @@ a:hover {
     flex-direction: column;
     background-color: #fff;
     border-radius: 10px;
+    font-size: 18px;
 
 }
 
@@ -174,19 +185,18 @@ a:hover {
 button {
     display: inline-block;
     padding: 10px 20px;
-    font-size: 16px;
-    background-color: #4CAF50;
-    color: #fff;
+    font-size: 18px;
+    background-color: rgba(142, 60, 213, 0.87);
+    color: white;
     border: none;
-    border-radius: 5px; /* Rounded corners */
+    border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
-    background-color: #45A049;
+    background-color: rgba(99, 36, 151, 0.87);
     transform: scale(1.05);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 button:focus {
@@ -272,11 +282,13 @@ button:focus {
 
 .experience-wrapper {
     height: 100vh;
+    margin-bottom: 50px;
 
 }
 
 .about-header-wrapper {
-    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 
