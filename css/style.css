@@ -101,17 +101,12 @@ a:hover {
     font-family: "Baloo Bhai 2";
 }
 
-@media screen and (max-width: 780px) {
-    #name {
-        text-align: center;
-    }
-}
-
 
 .main-intro {
     padding: 30px;
     width: 100%;
 }
+
 
 .header-title {
     font-size: 30px;
