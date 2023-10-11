@@ -1,7 +1,7 @@
 //TODO: style/format project cards
 //TODO: add project demo links to cards, on hover overlay slides up to reveal demo link
 
-console.log("Hello there!");
+console.log("Hello there fellow code warrior! This site is currenlty under construction :)");
 
 let aboutMe = ["Full Stack Web Developer 👩🏽‍💻", "U.S Navy Veteran 🇺🇸⚓️", "Coffee Lover ☕️", "Traveler ✈️", "Lifelong Learner", "Problem Solver", "Technology Enthusiast"];
 
