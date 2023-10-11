@@ -81,8 +81,8 @@ video {
 
 
 .headshot-wrapper {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
 }
 
@@ -282,7 +282,7 @@ button:focus {
 
 .experience-wrapper {
     height: 110vh;
-    
+
 }
 
 @media screen and (max-width: 600px) {
@@ -294,6 +294,24 @@ button:focus {
 .about-header-wrapper {
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+.about-image-wrapper {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+}
+
+.about-image-wrapper img {
+    height: auto;
+    margin-top: -55px;
+
+}
+
+@media screen and (max-width: 600px) {
+    .about-container {
+        gap: 20px;
+    }
 }
 
 
