@@ -69,7 +69,7 @@ function renderProjects(project) {
 
       <p>${project.description}</p>
 
-      <button>Preview</button>`;
+      <button> < Preview ></button>`;
 
     let showModalBtn = projectCard.querySelector("button");
     showModalBtn.addEventListener("click", () => {
