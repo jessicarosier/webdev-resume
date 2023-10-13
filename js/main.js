@@ -39,21 +39,21 @@ let projects = [
         liveSite: "https://weather-map.jessicarosier.com/"
     },
 
-    {
-        name: "Tic Tac Toe",
-        description: "This is a simple tic tac toe game created using HTML, CSS, and JavaScript. The game allows two players to play against each other and keeps track of the score. This project was completed in 3 days.",
-        demo: "video/tic-tac-toe-demo.mp4",
-        github: "https://github.com/jessicarosier/tic-tac-toe",
-        liveSite: ""
-    },
-
-    {
-        name: "Calculator",
-        description: "This is a simple calculator created using HTML, CSS, JavaScript and jQuery. The calculator allows users to perform basic math operations. This project was completed in 3 days.",
-        demo: "video/calculator-demo.mp4",
-        github: "https://github.com/jessicarosier/calculator",
-        liveSite: ""
-    },
+    // {
+    //     name: "Tic Tac Toe",
+    //     description: "This is a simple tic tac toe game created using HTML, CSS, and JavaScript. The game allows two players to play against each other and keeps track of the score. This project was completed in 3 days.",
+    //     demo: "video/tic-tac-toe-demo.mp4",
+    //     github: "https://github.com/jessicarosier/tic-tac-toe",
+    //     liveSite: ""
+    // },
+    //
+    // {
+    //     name: "Calculator",
+    //     description: "This is a simple calculator created using HTML, CSS, JavaScript and jQuery. The calculator allows users to perform basic math operations. This project was completed in 3 days.",
+    //     demo: "video/calculator-demo.mp4",
+    //     github: "https://github.com/jessicarosier/calculator",
+    //     liveSite: ""
+    // },
 
     {
         name: "Coffee Project",
