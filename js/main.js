@@ -3,7 +3,7 @@
 
 console.log("Hello there fellow code warrior! This site is currenlty under construction :)");
 
-let aboutMe = ["Full Stack Web Developer 👩🏽‍💻", "U.S Navy Veteran 🇺🇸⚓️", "Coffee Lover ☕️", "Traveler ✈️", "Lifelong Learner", "Problem Solver", "Technology Enthusiast"];
+let aboutMe = ["Full Stack Web Developer 👩🏽‍💻", "U.S Navy Veteran 🇺🇸⚓️", "Coffee Lover ☕️", "Traveler ✈️", "Lifelong Learner 📚", "Problem Solver 🧐git", "Technology Enthusiast 💻"];
 
 let aboutMeDisplay = document.querySelector("#about-me");
 let currentIndex = 0;
