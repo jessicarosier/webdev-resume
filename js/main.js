@@ -73,10 +73,6 @@ function renderProjects(project) {
 
       <a class="button" href="${project.liveSite}" target="_blank">  Live Site  </a>`;
 
-    // let showModalBtn = projectCard.querySelector("button");
-    // showModalBtn.addEventListener("click", () => {
-    //     renderModal(project);
-    // });
     document.querySelector(".projects-container").appendChild(projectCard);
 
 }
@@ -86,36 +82,6 @@ projects.forEach((project) => {
 });
 
 
-// Function to open the modal
-// function renderModal(project) {
-//     let modal = document.createElement("div");
-//     modal.classList.add("modal");
-//     modal.innerHTML = `<div class="modal-bg"></div>
-//       <div class="modal-content">
-//         <div class="modal-header">
-//           <h2 class="modal-title">${project.name}</h2>
-//           <span class="close">&times;</span>
-//         </div>
-//         <div class="modal-body">
-//
-//             <source src="${project.liveSite}" type="video/mp4">
-//
-//         </div>
-//       </div>`;
-
-// const modalBackground = modal.querySelector(".modal-bg");
-// const closeBtn = modal.querySelector("span");
-//
-// closeBtn.addEventListener("click", () => {
-//     modal.remove();
-// });
-//
-// modalBackground.addEventListener("click", () => {
-//     modal.remove();
-// });
-//
-// document.querySelector("body").appendChild(modal);
-// }
 
 
 
