@@ -54,7 +54,7 @@ let projects = [
 
     {
         name: "Coffee Project",
-        description: "This is a simple website for a coffee shop created using HTML, CSS, and JavaScript. This was a pair programming development project completed in 1 week.",
+        description: "This is a simple website for a coffee shop created using HTML, CSS, and JavaScript. Uses local storage to make data persistent. This was a pair programming development project completed in 1 week.",
         demo: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
         github: "",
         liveSite: "https://coffee.jessicarosier.com"
