@@ -292,12 +292,12 @@ a:hover {
     text-decoration: none;
 }
 
-button:hover {
+.button:hover {
     background-color: rgba(99, 36, 151, 0.87);
     transform: scale(1.05);
 }
 
-button:focus {
+.button:focus {
     outline: none;
 }
 
@@ -372,6 +372,9 @@ button:focus {
 .contact-img {
     width: 100px;
     height: 100px;
+    &:hover {
+        transform: scale(1.05);
+    }
 }
 
 .projects-container {
