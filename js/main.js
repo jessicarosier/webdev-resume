@@ -1,6 +1,3 @@
-//TODO: style/format project cards
-//TODO: add project demo links to cards, on hover overlay slides up to reveal demo link
-
 console.log("Hello there fellow code warrior! This site is currenlty under construction :)");
 
 let aboutMe = ["Full Stack Web Developer 👩🏽‍💻", "U.S Navy Veteran 🇺🇸⚓️", "Coffee Lover ☕️", "Traveler ✈️", "Lifelong Learner 📚", "Problem Solver 🧐", "Technology Enthusiast 💻"];
@@ -28,7 +25,7 @@ let projects = [
         description: "This web app allows users to search for movies and add them to a list of favorites. The app uses the TMDB API to search for movies and retrieve movie data as well as a local JSON database to store the list of favorite movies. This was a pair programming development project completed in 1 week.",
         demo: "video/fav-movie-app-demo.mp4",
         github: "https://github.com/jessicarosier/favorite-movies-app",
-        liveSite: ""
+        liveSite: "https://movies-app.jessicarosier.com"
     },
 
     {
@@ -60,7 +57,7 @@ let projects = [
         description: "This is a simple website for a coffee shop created using HTML, CSS, and JavaScript. This was a pair programming development project completed in 1 week.",
         demo: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
         github: "",
-        liveSite: ""
+        liveSite: "https://coffee.jessicarosier.com"
     }
 ];
 
@@ -74,13 +71,12 @@ function renderProjects(project) {
 
       <p>${project.description}</p>
 
-      <button> < Preview ></button>`;
+      <a class="button" href="${project.liveSite}" target="_blank">  Live Site  </a>`;
 
-    let showModalBtn = projectCard.querySelector("button");
-    showModalBtn.addEventListener("click", () => {
-        renderModal(project);
-    });
-
+    // let showModalBtn = projectCard.querySelector("button");
+    // showModalBtn.addEventListener("click", () => {
+    //     renderModal(project);
+    // });
     document.querySelector(".projects-container").appendChild(projectCard);
 
 }
@@ -91,35 +87,37 @@ projects.forEach((project) => {
 
 
 // Function to open the modal
-function renderModal(project) {
-    let modal = document.createElement("div");
-    modal.classList.add("modal");
-    modal.innerHTML = `<div class="modal-bg"></div>
-      <div class="modal-content">
-        <div class="modal-header">
-          <h2 class="modal-title">${project.name}</h2>
-          <span class="close">&times;</span>
-        </div>
-        <div class="modal-body">
-          <video class="modal-video" controls autoplay muted>
-            <source src="${project.demo}" type="video/mp4">
-          </video>
-        </div>
-      </div>`;
+// function renderModal(project) {
+//     let modal = document.createElement("div");
+//     modal.classList.add("modal");
+//     modal.innerHTML = `<div class="modal-bg"></div>
+//       <div class="modal-content">
+//         <div class="modal-header">
+//           <h2 class="modal-title">${project.name}</h2>
+//           <span class="close">&times;</span>
+//         </div>
+//         <div class="modal-body">
+//
+//             <source src="${project.liveSite}" type="video/mp4">
+//
+//         </div>
+//       </div>`;
 
-    const modalBackground = modal.querySelector(".modal-bg");
-    const closeBtn = modal.querySelector("span");
+// const modalBackground = modal.querySelector(".modal-bg");
+// const closeBtn = modal.querySelector("span");
+//
+// closeBtn.addEventListener("click", () => {
+//     modal.remove();
+// });
+//
+// modalBackground.addEventListener("click", () => {
+//     modal.remove();
+// });
+//
+// document.querySelector("body").appendChild(modal);
+// }
 
-    closeBtn.addEventListener("click", () => {
-        modal.remove();
-    });
 
-    modalBackground.addEventListener("click", () => {
-        modal.remove();
-    });
-
-    document.querySelector("body").appendChild(modal);
-}
 
 
 
