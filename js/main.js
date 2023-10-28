@@ -45,6 +45,33 @@ let projects = [
     }
 ];
 
+let certifications = [
+    {
+        name: "Securtiy+",
+        link: "https://www.credly.com/earner/earned/badge/469f4921-f554-4952-9365-c89947f5c373",
+        img: "img/sec_plus.png",
+    },
+    {
+        name: "Cloud+",
+        link: "https://www.credly.com/earner/earned/badge/0b165358-b5c7-4423-8170-c21a5278f2d4",
+        img: "img/cloud_plus.png",
+    },
+    {
+        name: "Network+",
+        link: "https://www.credly.com/earner/earned/badge/6ee6a226-61b4-4a86-a714-3db9ebea20e1",
+        img: "img/network_plus.png",
+    },
+    {
+        name: "Microsoft Certified: Azure Fundamentals",
+        link: "https://www.credly.com/earner/earned/badge/5fc16da2-789f-4f3f-b364-d7f1036636c7",
+        img: "img/azure_fundamentals.png",
+    },
+    {
+        name: "AWS Certified Cloud Practitioner",
+        link: "https://www.credly.com/earner/earned/badge/726fc5d4-c2b3-494a-b135-be48817d1bee",
+        img: "img/aws_practitioner.png",
+    }
+];
 
 let images = [
     "img/usn.jpeg",
@@ -85,6 +112,21 @@ function renderProjects(project) {
 
 projects.forEach((project) => {
     renderProjects(project);
+});
+
+
+//builds the project cards
+function renderCerts(cert) {
+    let certCard = document.createElement("div");
+    certCard.classList.add("project-card");
+    certCard.innerHTML = `
+    <img src="${cert.img}" class="cert-img">
+      <a class="button text-center" href="${cert.link}" target="_blank">  View Certification  </a>`;
+    document.querySelector(".certs-container").appendChild(certCard);
+}
+
+certifications.forEach((cert) => {
+    renderCerts(cert);
 });
 
 
