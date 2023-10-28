@@ -13,7 +13,7 @@
 </head>
 <body>
 
-<nav class="nav d-none d-lg-flex justify-content-center align-items-center">
+<nav class="nav d-none d-lg-flex justify-content-evenly align-items-center">
   <ul class="nav-links d-flex list-unstyled mb-0">
     <li
     ><a class="text-decoration-none text-uppercase nav-link" href="#"> < back to top >
@@ -23,6 +23,15 @@
     <li><a class="text-decoration-none text-uppercase nav-link" href="#skills"> < Skills > </a></li>
     <li><a class="text-decoration-none text-uppercase nav-link" href="#contact"> < Contact> </a></li>
   </ul>
+  <div class="d-flex justify-content-center align-items-center gap-2">
+    <a href="https://www.linkedin.com/in/jessica-rosier/"
+       target="_blank"><img class="main-icon" src="img/linkedin_dark.png" alt="facebook icon"></a>
+    <a href="https://github.com/jessicarosier"
+       target="_blank"><img class="main-icon" src="img/github-icon.svg" alt="github icon"></a>
+    <a href="mailto:jessica.c.rosier1@gmail.com" target="_blank"><img class="main-icon"
+                                                                      src="img/mail_dark.png"
+                                                                      alt="gmail icon"> </a>
+  </div>
 </nav>
 
 <div class="page-wrapper">
@@ -75,24 +84,21 @@
             Jessica Rosier
             <div id="about-me"></div>
           </div>
-          <div class="headshot-wrapper d-inline-block position-relative overflow-hidden object-fit-cover">
-            <img class="w-100" src="img/headshot.jpg"
-                 alt="professional-headshot">
+          <div class="d-flex flex-column align-items-center">
+            <div class="headshot-wrapper d-inline-block position-relative overflow-hidden object-fit-cover">
+              <img class="w-100" src="img/headshot.jpg"
+                   alt="professional-headshot">
+            </div>
           </div>
         </div>
 
       </div>
     </div>
-    <!--    project cards container   -->
-    <p class="header-title" id="projects"> < projects > </p>
-    <div class="projects-container d-flex align-items-center flex-column flex-lg-row h-100">
-    </div>
-    <!--    end project cards container   -->
 
-    <!--    experience    -->
-    <section class="experience-wrapper h-100"
+    <!--    About Me Section    -->
+    <section class="experience-wrapper"
              id="about">
-      <div class="row">
+      <div class="row about-me-row">
         <div class="d-flex flex-row flex-xl-column justify-content-center about-header-wrapper">
           <p class="header-title"> < about me > </p>
         </div>
@@ -137,59 +143,102 @@
       </div>
     </section>
 
+
+    <!--    project cards container   -->
+
+    <p class="header-title" id="projects"> < projects > </p>
+    <div class="projects-container d-flex align-items-center flex-column flex-lg-row h-100">
+    </div>
+
+    <!--    end project cards container   -->
+
+    <!--    Certifications Section -->
     <section>
       <div class="row" id="certs">
         <div class="d-flex flex-row flex-xl-column justify-content-center about-header-wrapper">
           <p class="header-title"> < certifications > </p>
         </div>
         <div class="certs-container d-flex align-items-center flex-column flex-lg-row h-100">
-
-
-        </div>
-
-    </section>
-
-
-    <section>
-      <div class="row" id="skills">
-        <div class="d-flex flex-row flex-xl-column justify-content-center about-header-wrapper">
-          <p class="header-title"> < skills > </p>
-        </div>
-        <div class="d-flex justify-content-center flex-wrap gap-3">
-          <img src="img/html5.svg" class="skills-icon" alt="html5 icon">
-          <img src="img/css3.svg" class="skills-icon" alt="css3 icon">
-          <img src="img/javascript.svg" class="skills-icon" alt="javascript icon">
-          <img src="img/java.svg" class="skills-icon" alt="java icon">
-          <img src="img/bootstrap.svg" class="skills-icon" alt="bootstrap icon">
-          <img src="img/mysql-logo.svg" class="skills-icon" alt="mysql icon">
-
+          <!--          Certification cards dynamically inserted with JavaScript-->
         </div>
 
       </div>
-
     </section>
 
-
-    <footer>
-      <div class="footer-container" id="contact">
-        <div class="d-flex flex-column justify-content-center flex-md-row about-header-wrapper">
-          <p class="header-title"> < contact me > </p>
+    <!-- Skills Section-->
+    <section class="skills-wrapper">
+      <div class="row skills-animation" id="skills">
+        <div class="d-flex flex-row flex-xl-column justify-content-center about-header-wrapper">
+          <p class="header-title"> < skills > </p>
         </div>
-        <div class="flex-lg-row flex-column">
-          <div class="col">
-            <div class="d-flex justify-content-center gap-2">
-              <a href="https://www.linkedin.com/in/jessica-rosier/"
-                 target="_blank"><img class="contact-img" src="img/linkedin.svg" alt="facebook icon"></a>
-              <a href="mailto:jessica.c.rosier1@gmail.com" target="_blank"><img class="contact-img"
-                                                                                src="img/gmail.svg" alt="gmail icon"
-              > </a>
-              <a href="https://github.com/jessicarosier"
-                 target="_blank"><img class="contact-img" src="img/github-icon.svg" alt="github icon"></a>
+        <div class="d-flex justify-content-between">
+          <div class="frontend d-flex flex-column justify-content-center align-items-center">
+            <p class="skills-header">Frontend</p>
+            <div class="d-flex justify-content-center">
+              <ul class="list-unstyled">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>jQuery</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="backend d-flex flex-column justify-content-center align-items-center">
+            <p class="skills-header">backend</p>
+            <div class="d-flex justify-content-center">
+              <ul class="list-unstyled">
+                <li>Java</li>
+                <li>mySQL</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tools d-flex flex-column justify-content-center align-items-center">
+            <p class="skills-header">tools</p>
+            <div class="d-flex justify-content-center">
+              <ul class="list-unstyled">
+                <li>Bootstrap</li>
+                <li>NPM</li>
+                <li>Microsoft Azure</li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-    </footer>
+    </section>
+
+
+    <!--    <footer>-->
+    <!--      <div class="footer-container" id="contact">-->
+    <!--        <div class="d-flex flex-column justify-content-center flex-md-row about-header-wrapper">-->
+    <!--          <p class="header-title"> < contact me > </p>-->
+    <!--        </div>-->
+    <!--        <div class="flex-lg-row flex-column">-->
+    <!--          <div class="col">-->
+    <!--            <div class="d-flex justify-content-center flex-column align-items-center gap-2">-->
+    <!--              <div class="d-flex align-items-center">-->
+    <!--                <a href="https://www.linkedin.com/in/jessica-rosier/"-->
+    <!--                   target="_blank"><img class="contact-img" src="img/linkedin.svg" alt="facebook icon"></a>-->
+    <!--                <p>Connect with me on LinkedIn</p>-->
+    <!--              </div>-->
+    <!--              <div class="d-flex align-items-center">-->
+    <!--                <p>Send me an email</p>-->
+    <!--                <a href="mailto:jessica.c.rosier1@gmail.com" target="_blank"><img class="contact-img"-->
+    <!--                                                                                  src="img/gmail.svg" alt="gmail icon"-->
+    <!--                > </a>-->
+
+    <!--              </div>-->
+    <!--              <div class="d-flex align-items-center">-->
+    <!--                <a href="https://github.com/jessicarosier"-->
+    <!--                   target="_blank"><img class="contact-img" src="img/github-icon.svg" alt="github icon"></a>-->
+    <!--                <p>Check out my GitHub</p>-->
+    <!--              </div>-->
+
+    <!--            </div>-->
+    <!--          </div>-->
+    <!--        </div>-->
+    <!--      </div>-->
+    <!--    </footer>-->
   </main>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
