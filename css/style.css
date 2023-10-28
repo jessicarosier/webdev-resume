@@ -420,6 +420,9 @@ a:hover {
     height: 60px;
 }
 
+#current-img {
+        transition: opacity 1s ease-in-out;
+}
 
 
 
