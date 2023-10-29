@@ -104,7 +104,7 @@ function renderProjects(project) {
     projectCard.classList.add("project-card");
     projectCard.innerHTML = `
     <h3>${project.name}</h3>
-    <a href="${project.github}" target="_blank"><img src="img/github.svg" class="git-img"></a>
+    <a href="${project.github}" target="_blank"><img src="img/github-icon.svg" class="git-img"></a>
   
       <p>${project.description}</p>
       <a class="button" href="${project.liveSite}" target="_blank">  Live Site  </a>`;
