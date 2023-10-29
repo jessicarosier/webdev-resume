@@ -37,7 +37,7 @@ video {
 }
 
 #m-nav-button {
-    height: ;
+    height: 50px;
     width: 50px;
     border: 1px solid black;
     border-radius: 5px;
@@ -147,7 +147,6 @@ a:hover {
     border-radius: 50%;
 
 }
-
 
 
 .headshot-wrapper img {
@@ -311,6 +310,7 @@ a:hover {
     .project-img-wrapper {
         display: none;
     }
+
     .project-img-wrapper img {
         display: none;
 
@@ -322,7 +322,6 @@ a:hover {
     transform: scale(1.05);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-
 
 
 .button {
@@ -349,10 +348,10 @@ a:hover {
 }
 
 
-
 .contact-img {
     width: 100px;
     height: 100px;
+
     &:hover {
         transform: scale(1.05);
     }
@@ -427,7 +426,7 @@ a:hover {
 }
 
 #current-img {
-        transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
 }
 
 .main-icon {
@@ -438,6 +437,7 @@ a:hover {
 .main-icon:hover {
     animation: wiggle 0.5s ease-in-out infinite;
 }
+
 @keyframes wiggle {
     0% {
         transform: rotate(0deg);
@@ -485,16 +485,17 @@ a:hover {
         transform: scale(1.05);
     }
 }
-.about-container{
+
+.about-container {
     margin-top: 100px;
 }
-
 
 
 .footer-icon {
     width: 50px;
     height: 50px;
     margin: 50px;
+
     &:hover {
         transform: scale(1.05);
     }
