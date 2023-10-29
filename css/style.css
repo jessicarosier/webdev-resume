@@ -251,7 +251,7 @@ a:hover {
 
 .project-card {
     width: 500px;
-    height: 600px;
+    height: 400px;
     margin: 20px;
     padding: 20px;
     display: flex;
@@ -372,9 +372,23 @@ a:hover {
 }
 
 
+.skills-icon-wrapper {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
 .skills-icon {
     width: 60px;
     height: 60px;
+    margin-top: 6px;
+    margin-left: 5px;
+
 }
 
 #current-img {
@@ -396,6 +410,9 @@ a:hover {
 
 #skills {
     font-family: var(--font);
+    height: 500px;
+    align-items: center;
+    justify-content: center;
 }
 
 

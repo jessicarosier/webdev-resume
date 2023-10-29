@@ -105,10 +105,7 @@ function renderProjects(project) {
     projectCard.innerHTML = `
     <h3>${project.name}</h3>
     <a href="${project.github}" target="_blank"><img src="img/github.svg" class="git-img"></a>
-    <div class="project-img-wrapper" >
-    <img src="${project.img}" class="project-img">
-    </div>
-    
+  
       <p>${project.description}</p>
       <a class="button" href="${project.liveSite}" target="_blank">  Live Site  </a>`;
     document.querySelector(".projects-container").appendChild(projectCard);
