@@ -1,4 +1,5 @@
-console.log("Hello there fellow code warrior! This site is currently under construction :)");
+console.log("if !(trick) { return \"treat\" }");
+console.log("Happy Halloween! 🎃👻🍬🍫🍭");
 
 //
 let aboutMe = ["Full Stack Web Developer 👩🏽‍💻", "U.S Navy Veteran 🇺🇸⚓️", "Coffee Lover ☕️", "Traveler ✈️", "Lifelong Learner 📚", "Problem Solver 🧐", "Technology Enthusiast 💻"];
@@ -116,7 +117,7 @@ projects.forEach((project) => {
 });
 
 
-//builds the project cards
+//builds the cert cards
 function renderCerts(cert) {
     let certCard = document.createElement("div");
     certCard.classList.add("cert-card");
