@@ -55,7 +55,7 @@ a:hover {
 
 
 .main-wrapper {
-    height: 100vh;
+    margin: 290px 0 240px 0;
 }
 
 #about-me {
@@ -199,15 +199,6 @@ a:hover {
 }
 
 
-@media screen and (max-width: 600px) {
-    .my-name-nav {
-        font-size: 50px;
-    }
-
-    .skills-wrapper {
-        height: 100vh;
-    }
-}
 
 #name {
     font-family: var(--font);
@@ -244,8 +235,8 @@ a:hover {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    margin: 20px;
+    padding: 0 20px;
+    margin: 0 20px;
     gap: 20px;
 }
 
@@ -290,11 +281,6 @@ a:hover {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
 }
-
-@media screen and (max-width: 600px) {
-    .projects-container {
-        height: 100%;
-    }
 
 
     .project-card {
@@ -365,18 +351,13 @@ a:hover {
 }
 
 .experience-wrapper {
-    height: 100vh;
+    height: 130vh;
 }
 
 .about-me-row {
-    gap: 75px;
+    gap: 0px;
 }
 
-@media screen and (max-width: 600px) {
-    .experience-wrapper {
-        height: 170vh;
-    }
-}
 
 .about-header-wrapper {
     margin-top: 50px;
@@ -393,16 +374,6 @@ a:hover {
     height: auto;
     margin-top: -55px;
 
-}
-
-@media screen and (max-width: 600px) {
-    .about-container {
-        gap: 20px;
-    }
-
-    .about-me-row {
-        gap: 0px;
-    }
 }
 
 
@@ -487,7 +458,7 @@ a:hover {
 }
 
 .about-container {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 
@@ -511,6 +482,112 @@ footer {
     width: 100%;
     margin-top: 100px;
 }
+
+
+
+@media screen and (max-width: 780px) {
+    .about-container {
+        gap: 20px;
+    }
+
+    .about-me-row {
+        gap: 0px;
+    }
+
+    .my-name-nav {
+        font-size: 50px;
+    }
+
+    .skills-wrapper {
+        height: 100vh;
+    }
+
+    .projects-container {
+        height: 100%;
+    }
+
+    .experience-wrapper {
+        height: 170vh;
+    }
+
+    .main-wrapper {
+        margin: 75px 0 200px 0;
+    }
+}
+
+
+
+@media screen and (max-width: 1030px) {
+    .about-container {
+        gap: 80px;
+    }
+
+    .experience-wrapper {
+        height: 130vh;
+    }
+
+    #certs {
+
+    }
+
+    .about-me-row {
+        gap: 0px;
+    }
+
+    .my-name-nav {
+        font-size: 50px;
+    }
+
+    .skills-wrapper {
+        height: 100vh;
+    }
+
+    .projects-container {
+        height: 100%;
+    }
+
+    .about-header-wrapper {
+        margin: 0;
+    }
+
+    .main-wrapper {
+        margin: 100px 0 200px 0;
+    }
+}
+
+    @media screen and (max-width: 450px) {
+        .about-container {
+            gap: 20px;
+        }
+
+        .about-me-row {
+            gap: 0px;
+        }
+
+        .my-name-nav {
+            font-size: 50px;
+        }
+
+        .skills-wrapper {
+            height: 100vh;
+        }
+
+        .projects-container {
+            height: 100%;
+        }
+
+        .experience-wrapper {
+            height: 160vh;
+        }
+
+        .about-container p {
+            padding: 10px 20px
+        }
+    }
+
+
+
+
 
 
 
