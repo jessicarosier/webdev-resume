@@ -119,7 +119,7 @@ projects.forEach((project) => {
 //builds the project cards
 function renderCerts(cert) {
     let certCard = document.createElement("div");
-    certCard.classList.add("project-card");
+    certCard.classList.add("cert-card");
     certCard.innerHTML = `
     <img src="${cert.img}" class="cert-img">
       <a class="button text-center" href="${cert.link}" target="_blank">  View Certification  </a>`;

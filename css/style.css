@@ -23,8 +23,8 @@ body {
 }
 
 p {
-
-    margin-bottom: 5px;
+    padding: 0;
+    margin: 0;
     font-family: var(--sec-font);
 }
 
@@ -145,7 +145,10 @@ a:hover {
     width: 250px;
     height: 250px;
     border-radius: 50%;
+
 }
+
+
 
 .headshot-wrapper img {
     height: auto;
@@ -201,6 +204,10 @@ a:hover {
     .my-name-nav {
         font-size: 50px;
     }
+
+    .skills-wrapper {
+        height: 100vh;
+    }
 }
 
 #name {
@@ -216,10 +223,9 @@ a:hover {
 
 .header-title {
     font-size: 30px;
-    font-weight: bold;
     text-align: center;
     margin-bottom: 0;
-    margin-top: 50px;
+    padding: 15px 0px 15px 0px;
     text-transform: uppercase;
     font-family: var(--font);
     font-weight: bolder;
@@ -263,7 +269,27 @@ a:hover {
     font-size: 18px;
     font-family: var(--sec-font);
     gap: 15px;
+}
 
+.cert-card {
+    width: 500px;
+    height: 300px;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: var(--sec-font);
+    gap: 15px;
+
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -274,7 +300,12 @@ a:hover {
 
     .project-card {
         width: 300px;
-        height: 450px;
+        height: 500px;
+    }
+
+    .cert-card {
+        width: 300px;
+        height: 400px;
     }
 
     .project-img-wrapper {
@@ -291,6 +322,7 @@ a:hover {
     transform: scale(1.05);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+
 
 
 .button {
@@ -335,7 +367,6 @@ a:hover {
 
 .experience-wrapper {
     height: 100vh;
-    margin-bottom: 400px;
 }
 
 .about-me-row {
@@ -344,7 +375,7 @@ a:hover {
 
 @media screen and (max-width: 600px) {
     .experience-wrapper {
-        height: 130vh;
+        height: 170vh;
     }
 }
 
@@ -368,6 +399,10 @@ a:hover {
 @media screen and (max-width: 600px) {
     .about-container {
         gap: 20px;
+    }
+
+    .about-me-row {
+        gap: 0px;
     }
 }
 
@@ -398,6 +433,23 @@ a:hover {
 .main-icon {
     height: 50px;
     width: 50px;
+}
+
+.main-icon:hover {
+    animation: wiggle 0.5s ease-in-out infinite;
+}
+@keyframes wiggle {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
 .skills-header {
@@ -433,6 +485,32 @@ a:hover {
         transform: scale(1.05);
     }
 }
+.about-container{
+    margin-top: 100px;
+}
+
+
+
+.footer-icon {
+    width: 50px;
+    height: 50px;
+    margin: 50px;
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(142, 60, 213, 0.87);
+    height: 400px;
+    width: 100%;
+    margin-top: 100px;
+}
+
 
 
 
