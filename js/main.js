@@ -25,21 +25,21 @@ let projects = [
     {
         name: "Favorite Movies App",
         description: "This web app allows users to search for movies and add them to a list of favorites. The app uses the TMDB API to search for movies and retrieve movie data as well as a local JSON database to store the list of favorite movies. Technologies used include HTML, CSS, JavaScript, bootstrap, and JSON server.",
-        demo: "video/fav-movie-app-demo.mp4",
+        img: "img/movies_app_preview.png",
         github: "https://github.com/jessicarosier/favorite-movies-app",
         liveSite: "https://movies-app.jessicarosier.com"
     },
     {
         name: "Weather Map",
         description: "This is a weather app created using HTML, CSS, and JavaScript. The app uses the OpenWeatherMap API to retrieve weather data for a given location as well as the MapBox API to display a map of the location.",
-        demo: "video/weather-map-demo.mp4",
+        img: "img/weather_map_preview.png",
         github: "https://github.com/jessicarosier/weather-map",
         liveSite: "https://weather-map.jessicarosier.com/"
     },
     {
         name: "Coffee Project",
         description: "This is a simple website for a coffee shop created using HTML, CSS, and JavaScript. This site uses local storage to make data persistent.",
-        demo: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        img: "img/coffee_preview.png",
         github: "",
         liveSite: "https://coffee.jessicarosier.com"
     }
@@ -105,6 +105,10 @@ function renderProjects(project) {
     projectCard.innerHTML = `
     <h3>${project.name}</h3>
     <a href="${project.github}" target="_blank"><img src="img/github.svg" class="git-img"></a>
+    <div class="project-img-wrapper" >
+    <img src="${project.img}" class="project-img">
+    </div>
+    
       <p>${project.description}</p>
       <a class="button" href="${project.liveSite}" target="_blank">  Live Site  </a>`;
     document.querySelector(".projects-container").appendChild(projectCard);
