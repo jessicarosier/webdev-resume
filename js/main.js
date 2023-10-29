@@ -48,27 +48,27 @@ let projects = [
 let certifications = [
     {
         name: "Securtiy+",
-        link: "https://www.credly.com/earner/earned/badge/469f4921-f554-4952-9365-c89947f5c373",
+        link: "https://www.credly.com/badges/469f4921-f554-4952-9365-c89947f5c373/public_url",
         img: "img/sec_plus.png",
     },
     {
         name: "Cloud+",
-        link: "https://www.credly.com/earner/earned/badge/0b165358-b5c7-4423-8170-c21a5278f2d4",
+        link: "https://www.credly.com/badges/0b165358-b5c7-4423-8170-c21a5278f2d4/public_url",
         img: "img/cloud_plus.png",
     },
     {
         name: "Network+",
-        link: "https://www.credly.com/earner/earned/badge/6ee6a226-61b4-4a86-a714-3db9ebea20e1",
+        link: "https://www.credly.com/badges/6ee6a226-61b4-4a86-a714-3db9ebea20e1/public_url",
         img: "img/network_plus.png",
     },
     {
         name: "Microsoft Certified: Azure Fundamentals",
-        link: "https://www.credly.com/earner/earned/badge/5fc16da2-789f-4f3f-b364-d7f1036636c7",
+        link: "https://www.credly.com/badges/5fc16da2-789f-4f3f-b364-d7f1036636c7/public_url",
         img: "img/azure_fundamentals.png",
     },
     {
         name: "AWS Certified Cloud Practitioner",
-        link: "https://www.credly.com/earner/earned/badge/726fc5d4-c2b3-494a-b135-be48817d1bee",
+        link: "https://www.credly.com/badges/726fc5d4-c2b3-494a-b135-be48817d1bee/public_url",
         img: "img/aws_practitioner.png",
     }
 ];
