@@ -63,6 +63,11 @@ let certifications = [
         img: "img/network_plus.png",
     },
     {
+        name: "Server+",
+        link: "https://www.credly.com/badges/a9756f7e-7749-4aff-bde8-c5a89e9785c3/public_url",
+        img: "img/server_plus.png",
+    },
+    {
         name: "Microsoft Certified: Azure Fundamentals",
         link: "https://www.credly.com/badges/5fc16da2-789f-4f3f-b364-d7f1036636c7/public_url",
         img: "img/azure_fundamentals.png",
