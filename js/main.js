@@ -1,5 +1,4 @@
-console.log("if !(trick) { return \"treat\" }");
-console.log("Happy Halloween! 🎃👻🍬🍫🍭");
+console.log("Hello there!");
 
 //
 let aboutMe = ["Full Stack Web Developer 👩🏽‍💻", "U.S Navy Veteran 🇺🇸⚓️", "Coffee Lover ☕️", "Traveler ✈️", "Lifelong Learner 📚", "Problem Solver 🧐", "Technology Enthusiast 💻"];
