@@ -42,6 +42,14 @@ let projects = [
         img: "img/coffee_preview.png",
         github: "",
         liveSite: "https://coffee.jessicarosier.com"
+    },
+
+    {
+        name: "Ducklister",
+        description: "Ducklister is a full stack web application that allows a niche community of jeep enthusiasts to share their love for rubber ducks by listing and interacting with others. Users can register for a new account, edit their profile, list ducks they want to share, and engage with fellow duck lovers. Technologies used include HTML, CSS, JavaScript, bootstrap, Java, and MySQL. Built on the MVC design pattern, Ducklister was mapped using servlets, and JSPs were used to generate HTML pages. Prepared statements were used to prevent SQL injection, and BCrypt algorithm was used to hash passwords.",
+        img: "img/coffee_preview.png",
+        github: "",
+        liveSite: ""
     }
 ];
 
