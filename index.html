@@ -7,8 +7,17 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="icon" type="image/x-icon" href="img/favicon-32x32.png">
   <title>Jessica Rosier</title>
+  <!--  Bootstrap CDN  -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  <!--  Devicon CDN  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <!-- Google Icons CDN -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+  <!--  Custom CSS  -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -24,29 +33,39 @@
   </ul>
   <div class="d-flex justify-content-center align-items-center gap-2">
     <a href="https://www.linkedin.com/in/jessica-rosier/"
-       target="_blank"><img class="main-icon" src="img/linkedin_dark.png" alt="facebook icon"></a>
+       target="_blank"><img class="main-icon"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                            alt="facebook icon"></a>
     <a href="https://github.com/jessicarosier"
-       target="_blank"><img class="main-icon" src="img/github-icon.svg" alt="github icon"></a>
-    <a href="mailto:jessica.c.rosier1@gmail.com" target="_blank"><img class="main-icon"
-                                                                      src="img/mail_dark.png"
-                                                                      alt="gmail icon"> </a>
+       target="_blank"><img class="main-icon"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                            alt="github icon"></a>
+    <a href="mailto:jessica.c.rosier1@gmail.com" target="_blank">
+      <span class="material-icons md-dark md-36" style="color: white; font-size: 50px">email</span>
+    </a>
   </div>
 </nav>
 
 <div class="page-wrapper">
-  <div class="collapse" id="navbarToggleExternalContent">
+  <div class="collapse collapse-horizontal" id="navbarToggleExternalContent" style="min-height: 300px">
     <div class="p-4">
       <ul
           class="d-flex flex-column list-unstyled gap-3 align-items-center justify-content-center mb-0 text-uppercase"
       >
         <li>
-          <a class="text-decoration-none text-black text-uppercase m-nav-link" href="#projects">< projects ></a>
+          <a class="text-decoration-none text-black text-uppercase m-nav-link" href="#projects">
+            < projects >
+          </a>
         </li>
         <li>
-          <a class="text-decoration-none text-black text-uppercase m-nav-link" href="#about">< about ></a>
+          <a class="text-decoration-none text-black text-uppercase m-nav-link" href="#about">
+            < about me >
+          </a>
         </li>
         <li>
-          <a class="text-decoration-none text-black text-uppercase m-nav-link" href="#skills">< skills ></a>
+          <a class="text-decoration-none text-black text-uppercase m-nav-link" href="#skills">
+            < skills >
+          </a>
         </li>
       </ul>
     </div>
@@ -110,18 +129,18 @@
               <p> Hello there!
                 <br>
                 <br>
-                I'm <strong>Jessica Rosier</strong>, and enthusiastic full stack web developer on a mission to
-                decode
-                the digital world. With a toolbox filled with skills including HMTL, CSS, Javascript, Java, and more,
-                I'm ready and committed to tackle the latest tech challenges.
+                I'm <strong>Jessica Rosier</strong>, a passionate full stack web developer on a mission to
+                create beautiful, functional, and user-friendly applications.
+                <br>
                 <br>
                 Before diving into the world of web development, I voyaged across the seas 🌊 while serving in the
-                United States Navy as an Information Systems Technician where I managed vast networks and
-                ensured optimal performance of systems.
+                United States Navy as an Information Systems Technician where I managed networks and
+                ensured optimal performance of systems and equipment.
                 <br>
-                I've found my true passion in web development—a realm where I can merge my technical background with
-                creativity! I'm eager to embark on a career journey with a team of like-minded individuals who share
-                my passion for creating exceptional products through innovative development.
+                <br>
+                I've uncovered my true passion in web development — a realm where I can seamlessly blend my technical
+                expertise with creativity! I'm excited to embark on a career journey where I can continue to learn and
+                grow as a developer and make positive impact through code and design.
                 <br>
 
               </p>
@@ -135,7 +154,13 @@
     <!--    project cards container   -->
 
     <p class="header-title" id="projects"> < projects > </p>
-    <div class="projects-container d-flex align-items-center justify-content-between flex-column flex-lg-row">
+    <div class="projects-wrapper">
+      <button class="btn btn-outline-secondary" id="previous-btn"><i class="bi bi-arrow-left"></i></button>
+      <div class="projects-container">
+        <!--      Project cards dynamically inserted with JavaScript-->
+      </div>
+
+      <button class="btn btn-outline-secondary" id="next-btn"><i class="bi bi-arrow-right"></i></button>
     </div>
 
     <!--    end project cards container   -->
@@ -164,15 +189,27 @@
             <p class="skills-header">Frontend</p>
             <div class="d-flex justify-content-center">
               <ul class="list-unstyled">
+                <!-- HTML-->
                 <li class="skills-icon-wrapper d-inline-block position-relative overflow-hidden object-fit-cover"><img
-                    src="img/html5.svg" class="skills-icon"></li>
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                    class="skills-icon"></li>
+                <!-- CSS-->
                 <li class="skills-icon-wrapper d-inline-block position-relative overflow-hidden object-fit-cover"><img
-                    src="img/css3.svg" class="skills-icon"></li>
-                <li class="skills-icon-wrapper d-inline-block position-relative overflow-hidden object-fit-cover"><img
-                    src="img/javascript-icon.svg" class="skills-icon">
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="skills-icon">
                 </li>
+                <!-- JavaScript-->
                 <li class="skills-icon-wrapper d-inline-block position-relative overflow-hidden object-fit-cover"><img
-                    src="img/jquery.svg" class="skills-icon"></li>
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                    class="skills-icon">
+                </li>
+                <!-- jQuery-->
+                <li class="skills-icon-wrapper d-inline-block position-relative overflow-hidden object-fit-cover"><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg"
+                    class="skills-icon"></li>
+                <!-- Bootstrap -->
+                <li class="skills-icon-wrapper d-inline-block position-relative overflow-hidden object-fit-cover"><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                    class="skills-icon"></li>
               </ul>
             </div>
           </div>
@@ -181,10 +218,18 @@
             <p class="skills-header">backend</p>
             <div class="d-flex justify-content-center">
               <ul class="list-unstyled">
+                <!-- Java-->
                 <li class="skills-icon-wrapper d-inline-block position-relative overflow-hidden object-fit-cover"><img
-                    src="img/java.svg" class="skills-icon"></li>
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-plain.svg" class="skills-icon">
+                </li>
+                <!-- mySQL -->
                 <li class="skills-icon-wrapper d-inline-block position-relative overflow-hidden object-fit-cover"><img
-                    src="img/mysql-logo.svg" class="skills-icon"></li>
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"
+                    class="skills-icon"></li>
+                <!-- SpringBoot -->
+                <li class="skills-icon-wrapper d-inline-block position-relative overflow-hidden object-fit-cover"><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
+                    class="skills-icon"></li>
               </ul>
             </div>
           </div>
@@ -192,14 +237,31 @@
             <p class="skills-header">tools</p>
             <div class="d-flex justify-content-center">
               <ul class="list-unstyled">
+                <!-- Github -->
                 <li class="skills-icon-wrapper d-inline-block position-relative overflow-hidden object-fit-cover"><img
-                    src="img/bootstrap.svg" class="skills-icon"></li>
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                    class="skills-icon"></li>
+                <!-- NPM -->
                 <li class="skills-icon-wrapper d-inline-block position-relative overflow-hidden object-fit-cover"><img
-                    src="img/npm.svg" class="skills-icon"></li>
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg"
+                    class="skills-icon"></li>
+                <!-- Azure -->
                 <li class="skills-icon-wrapper d-inline-block position-relative overflow-hidden object-fit-cover"><img
-                    src="img/azure.svg" class="skills-icon"></li>
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg"
+                    class="skills-icon"></li>
+                <!-- AWS -->
                 <li class="skills-icon-wrapper d-inline-block position-relative overflow-hidden object-fit-cover"><img
-                    src="img/aws.svg" class="skills-icon"></li>
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg"
+                    class="skills-icon"></li>
+                <!-- Linux -->
+                <li class="skills-icon-wrapper d-inline-block position-relative overflow-hidden object-fit-cover"><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+                    class="skills-icon"></li>
+                <!-- VS Code -->
+                <li class="skills-icon-wrapper d-inline-block position-relative overflow-hidden object-fit-cover"><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+                    class="skills-icon"></li>
+
               </ul>
             </div>
           </div>
@@ -212,12 +274,16 @@
   <footer class="h-100">
     <div class="d-flex justify-content-center align-items-center gap-2">
       <a href="https://www.linkedin.com/in/jessica-rosier/"
-         target="_blank"><img class="footer-icon" src="img/linkedin_dark.png" alt="facebook icon"></a>
+         target="_blank"><img class="footer-icon"
+                              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                              alt="facebook icon"></a>
       <a href="https://github.com/jessicarosier"
-         target="_blank"><img class="footer-icon" src="img/github-icon.svg" alt="github icon"></a>
-      <a href="mailto:jessica.c.rosier1@gmail.com" target="_blank"><img class="footer-icon"
-                                                                        src="img/mail_dark.png"
-                                                                        alt="gmail icon"> </a>
+         target="_blank"><img class="footer-icon"
+                              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                              alt="github icon"></a>
+      <a href="mailto:jessica.c.rosier1@gmail.com" target="_blank">
+        <span class="material-icons md-dark md-36" style="color: white; font-size: 50px">email</span>
+      </a>
     </div>
   </footer>
 
@@ -226,5 +292,6 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
 <script type="module" src="js/main.js"></script>
+
 </body>
 </html>

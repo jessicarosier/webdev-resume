@@ -25,23 +25,39 @@ let projects = [
     {
         name: "Favorite Movies App",
         description: "This web app allows users to search for movies and add them to a list of favorites. The app uses the TMDB API to search for movies and retrieve movie data as well as a local JSON database to store the list of favorite movies. Technologies used include HTML, CSS, JavaScript, bootstrap, and JSON server.",
-        img: "img/movies_app_preview.png",
+        img: "img/preview/movies-mbp.jpeg",
         github: "https://github.com/jessicarosier/favorite-movies-app",
         liveSite: "https://movies-app.jessicarosier.com"
     },
     {
         name: "Weather Map",
         description: "This is a weather app created using HTML, CSS, and JavaScript. The app uses the OpenWeatherMap API to retrieve weather data for a given location as well as the MapBox API to display a map of the location.",
-        img: "img/weather_map_preview.png",
+        img: "img/preview/weather-mbp.jpeg",
         github: "https://github.com/jessicarosier/weather-map",
         liveSite: "https://weather-map.jessicarosier.com/"
     },
     {
         name: "Coffee Project",
-        description: "This is a simple website for a coffee shop created using HTML, CSS, and JavaScript. This site uses local storage to make data persistent.",
-        img: "img/coffee_preview.png",
-        github: "",
+        description: "This is a simple website demonstrating the use of HTML, CSS,and DOM manipulation with JavaScript. The website is a single page that displays information about coffee. Users can search for coffee by name, or roast type and add new coffee to the page. Local storage is used to make the newly added coffee persist on the page.",
+        img: "img/preview/coffee-mbp.jpeg",
+        github: "https://github.com/jessica-nani-coffee-project/coffee-project/tree/main",
         liveSite: "https://coffee.jessicarosier.com"
+    },
+
+    {
+        name: "Ducklister",
+        description: "Ducklister is a full stack web application that allows a niche community of jeep enthusiasts to share their love for rubber ducks. Users can register for a new account, edit their profile, list ducks they want to share, and engage with fellow duck lovers. Technologies used include HTML, CSS, JavaScript, Java, and MySQL. Ducklister was mapped using servlets, and JSPs were used to generate HTML pages. Prepared statements were used to prevent SQL injection, and BCrypt algorithm was used to hash passwords.",
+        img: "img/preview/ducklister-mbp.jpeg",
+        github: "https://github.com/Genesis-Luis-Jessica-Adlister/ducklister",
+        liveSite: ""
+    },
+
+    {
+        name: "Map-Share",
+        description: "Map-Share is a full stack web application that allows users to document their travels and share their experiences with others. Users can register for a new account, edit their profile, and create custom maps to document the countries they have visited. Technologies used include HTML, CSS, JavaScript, Java, MySQL, Spring Boot, and Thymeleaf. Map-Share was mapped using Spring Boot, and Thymeleaf was used to generate HTML pages. RESTful APIs were used to retrieve data from the database and display it on the front end. The Mapbox API was used to display maps and FileStack API was used to upload images. This project was completed as part of the Software Development Bootcamp at Codeup and was deployed with Dokku.",
+        img: "img/preview/mapshare-mbp.jpeg",
+        github: "https://github.com/Mapstone-Capstone/Mapstone",
+        liveSite: "https://map-share.net/",
     }
 ];
 
@@ -100,25 +116,77 @@ function changeImage() {
 
 // calls the changeImage function
 setInterval(changeImage, 5000); // changes the image every 5 seconds
-changeImage();
 
-
-//builds the project cards
-function renderProjects(project) {
+function renderProjects(projects) {
+    let projectsContainer = document.querySelector(".projects-container");
+    let currentIndx = 0;
     let projectCard = document.createElement("div");
     projectCard.classList.add("project-card");
     projectCard.innerHTML = `
-    <h3>${project.name}</h3>
-    <a href="${project.github}" target="_blank"><img src="img/github-icon.svg" class="git-img"></a>
-  
-      <p>${project.description}</p>
-      <a class="button" href="${project.liveSite}" target="_blank">  Live Site  </a>`;
-    document.querySelector(".projects-container").appendChild(projectCard);
+    <img src="${projects.img}" class="project-img">
+    <div class="project-info">
+      <h3 class="project-title">${projects.name}</h3>
+      <p class="project-description">${projects.description}</p>
+      <div class="project-links">
+        <a class="button" href="${projects.github}" target="_blank">GitHub</a>
+      
+      </div>
+    `;
+
+    if (projects.liveSite !== "") {
+        projectCard.querySelector(".project-links").innerHTML += `
+        <a class="button" href="${projects.liveSite}" target="_blank">Live Site</a>
+        `;
+    }
+
+    let projectCardImg = projectCard.querySelector("img");
+    let projectCardTitle = projectCard.querySelector(".project-title");
+    let projectCardDescription = projectCard.querySelector(".project-description");
+    let projectCardLinks = projectCard.querySelector(".project-links");
+
+    function changeProject() {
+        projectCardImg.src = projects[currentIndx].img;
+        projectCardTitle.textContent = projects[currentIndx].name;
+        projectCardDescription.textContent = projects[currentIndx].description;
+        projectCardLinks.innerHTML = `
+        <a class="button" href="${projects[currentIndx].github}" target="_blank">GitHub</a>
+        <a class="button" href="${projects[currentIndx].liveSite}" target="_blank">Live Site</a>
+        `;
+    }
+
+    setTimeout(function () {
+        changeProject();
+        currentIndx = (currentIndx + 1) % projects.length;
+        projectsContainer.appendChild(projectCard);
+
+    }, 1000);
+
+    //event listener for when the next button is clicked
+    document.querySelector("#next-btn").addEventListener("click", function () {
+        changeProject();
+        //if the current index is the last index in the array, set the current index to 0, otherwise increment the current index by 1
+        if (currentIndx === projects.length) {
+            currentIndx = 0;
+        } else {
+            currentIndx = (currentIndx + 1) % projects.length;
+        }
+
+    });
+
+    //event listener for when the previous button is clicked
+    document.querySelector("#previous-btn").addEventListener("click", function () {
+        changeProject();
+        //if the current index is the first index in the array, set the current index to the last index, otherwise decrement the current index by 1
+        if (currentIndx === 0) {
+            currentIndx = projects.length - 1;
+        } else {
+            currentIndx = (currentIndx - 1) % projects.length;
+        }
+    });
+
 }
 
-projects.forEach((project) => {
-    renderProjects(project);
-});
+renderProjects(projects);
 
 
 //builds the cert cards
