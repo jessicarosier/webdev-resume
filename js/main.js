@@ -25,31 +25,39 @@ let projects = [
     {
         name: "Favorite Movies App",
         description: "This web app allows users to search for movies and add them to a list of favorites. The app uses the TMDB API to search for movies and retrieve movie data as well as a local JSON database to store the list of favorite movies. Technologies used include HTML, CSS, JavaScript, bootstrap, and JSON server.",
-        img: "img/movies_app_preview.png",
+        img: "img/preview/movies-mbp.jpeg",
         github: "https://github.com/jessicarosier/favorite-movies-app",
         liveSite: "https://movies-app.jessicarosier.com"
     },
     {
         name: "Weather Map",
         description: "This is a weather app created using HTML, CSS, and JavaScript. The app uses the OpenWeatherMap API to retrieve weather data for a given location as well as the MapBox API to display a map of the location.",
-        img: "img/weather_map_preview.png",
+        img: "img/preview/weather-mbp.jpeg",
         github: "https://github.com/jessicarosier/weather-map",
         liveSite: "https://weather-map.jessicarosier.com/"
     },
     {
         name: "Coffee Project",
         description: "This is a simple website for a coffee shop created using HTML, CSS, and JavaScript. This site uses local storage to make data persistent.",
-        img: "img/coffee_preview.png",
+        img: "img/preview/coffee-mbp.jpeg",
         github: "",
         liveSite: "https://coffee.jessicarosier.com"
     },
 
     {
         name: "Ducklister",
-        description: "Ducklister is a full stack web application that allows a niche community of jeep enthusiasts to share their love for rubber ducks by listing and interacting with others. Users can register for a new account, edit their profile, list ducks they want to share, and engage with fellow duck lovers. Technologies used include HTML, CSS, JavaScript, bootstrap, Java, and MySQL. Built on the MVC design pattern, Ducklister was mapped using servlets, and JSPs were used to generate HTML pages. Prepared statements were used to prevent SQL injection, and BCrypt algorithm was used to hash passwords.",
-        img: "img/coffee_preview.png",
+        description: "Ducklister is a full stack web application that allows a niche community of jeep enthusiasts to share their love for rubber ducks. Users can register for a new account, edit their profile, list ducks they want to share, and engage with fellow duck lovers. Technologies used include HTML, CSS, JavaScript, Java, and MySQL. Ducklister was mapped using servlets, and JSPs were used to generate HTML pages. Prepared statements were used to prevent SQL injection, and BCrypt algorithm was used to hash passwords.",
+        img: "img/preview/ducklister-mbp.jpeg",
         github: "",
         liveSite: ""
+    },
+
+    {
+        name: "Map-Share",
+        description: "Map-Share is a full stack web application that allows users to document their travels and share their experiences with others. Users can register for a new account, edit their profile, and create custom maps to document the countries they have visited. Technologies used include HTML, CSS, JavaScript, Java, MySQL, Spring Boot, and Thymeleaf. Map-Share was mapped using Spring Boot, and Thymeleaf was used to generate HTML pages. RESTful APIs were used to retrieve data from the database and display it on the front end. The Mapbox API was used to display maps and FileStack API was used to upload images. This project was completed as part of the Software Development Bootcamp at Codeup and was deployed with Dokku.",
+        img: "img/preview/mapshare-mbp.jpeg",
+        github: "",
+        liveSite: "",
     }
 ];
 
@@ -113,15 +121,15 @@ changeImage();
 
 //builds the project cards
 function renderProjects(project) {
-    let projectCard = document.createElement("div");
+    let projectCard = document.createElement("img");
     projectCard.classList.add("project-card");
-    projectCard.innerHTML = `
-    <h3>${project.name}</h3>
-    <a href="${project.github}" target="_blank"><img src="img/github-icon.svg" class="git-img"></a>
-  
-      <p>${project.description}</p>
-      <a class="button" href="${project.liveSite}" target="_blank">  Live Site  </a>`;
+    projectCard.src = project.img;
+    projectCard.style.backgroundColor = "white";
+
+
     document.querySelector(".projects-container").appendChild(projectCard);
+
+
 }
 
 projects.forEach((project) => {
