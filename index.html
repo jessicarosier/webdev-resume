@@ -154,7 +154,13 @@
     <!--    project cards container   -->
 
     <p class="header-title" id="projects"> < projects > </p>
-    <div class="projects-container d-flex align-items-center justify-content-between flex-column flex-lg-row">
+    <div class="projects-wrapper">
+      <button class="btn btn-outline-secondary" id="previous-btn"><i class="bi bi-arrow-left"></i></button>
+      <div class="projects-container">
+        <!--      Project cards dynamically inserted with JavaScript-->
+      </div>
+
+      <button class="btn btn-outline-secondary" id="next-btn"><i class="bi bi-arrow-right"></i></button>
     </div>
 
     <!--    end project cards container   -->
@@ -286,5 +292,6 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
 <script type="module" src="js/main.js"></script>
+
 </body>
 </html>
