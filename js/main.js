@@ -215,11 +215,13 @@ function renderCerts(cert) {
          <span class="material-icons">
 launch
 </span>`;
+        certCard.querySelector(".cert-img").style.filter = "blur(5px)";
         certCard.appendChild(certCardOverlay);
     });
 
     //event listener for mouse leave make the cert card not clickable
     certCard.addEventListener("mouseleave", function () {
+        certCard.querySelector(".cert-img").style.filter = "blur(0px)";
         certCard.querySelector(".cert-overlay").remove();
     });
 }
