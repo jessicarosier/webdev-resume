@@ -37,7 +37,7 @@ function changeImage() {
 }
 
 // calls the changeImage function
-setInterval(changeImage, 5000); // changes the image every 5 seconds
+// setInterval(changeImage, 5000); // changes the image every 5 seconds
 
 function renderProjects(projects) {
     let projectsContainer = document.querySelector(".projects-container");
