@@ -181,6 +181,7 @@ a {
     text-transform: uppercase;
     letter-spacing: 10px;
     font-size: 100px;
+    font-weight: bolder;
 
     @media (max-width: 768px) {
         font-size: 60px;
@@ -244,6 +245,10 @@ a {
     text-transform: uppercase;
     font-family: var(--font);
     font-weight: bolder;
+
+    @media (max-width: 768px) {
+        font-size: 30px;
+    }
 }
 
 
@@ -589,13 +594,6 @@ a {
     font-weight: bold;
     font-size: 30px;
     text-decoration: underline;
-}
-
-#skills {
-    font-family: var(--font);
-    height: 500px;
-    align-items: center;
-    justify-content: center;
 }
 
 
