@@ -205,20 +205,22 @@ function renderCerts(cert) {
 
     //event listener for mouse enter make the cert card with a clickable link overlay
     certCard.addEventListener("mouseenter", function () {
-        certCard.innerHTML = `
-        <img src="${cert.img}" class="cert-img blur">
-          <a href="${cert.link}" target="_blank" class="cert-link cert-overlay">View Certificate <span class="material-icons">
+        let certCardOverlay = document.createElement("a");
+        certCardOverlay.href = cert.link;
+        certCardOverlay.target = "_blank";
+        certCardOverlay.classList.add("cert-link");
+        certCardOverlay.classList.add("cert-overlay");
+        certCardOverlay.textContent = "View Certificate";
+        certCardOverlay.innerHTML += `
+         <span class="material-icons">
 launch
-</span></a>
-        
-        `;
+</span>`;
+        certCard.appendChild(certCardOverlay);
     });
 
     //event listener for mouse leave make the cert card not clickable
     certCard.addEventListener("mouseleave", function () {
-        certCard.innerHTML = `
-        <img src="${cert.img}" class="cert-img">
-        `;
+        certCard.querySelector(".cert-overlay").remove();
     });
 }
 
@@ -267,7 +269,7 @@ let skills = [
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg",
         type: "back-end"
     },
-  
+
     {
         name: "GitHub",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
