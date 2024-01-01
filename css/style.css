@@ -324,6 +324,7 @@ a {
 
 .button {
     display: inline-block;
+    text-align: center;
     padding: 10px 20px;
     font-size: 18px;
     font-family: var(--sec-font);
@@ -403,7 +404,6 @@ a {
 
 #current-img {
     max-width: 40%;
-    height: 500px;
     object-fit: contain;
     border-radius: 20px;
     padding: 0;
@@ -412,6 +412,7 @@ a {
 
     @media (max-width: 1024px) {
         max-width: 100%;
+        height: auto;
     }
 }
 
@@ -736,6 +737,7 @@ footer {
 }
 
 .contact-button.resume {
+    text-align: center;
 
     p.after {
         display: none;
