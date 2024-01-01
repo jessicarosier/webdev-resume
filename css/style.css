@@ -174,7 +174,7 @@ a {
     font-weight: bolder;
 
     @media (max-width: 768px) {
-        font-size: 30px;
+        font-size: 40px;
     }
 }
 
@@ -375,14 +375,6 @@ a {
 
 .about-header-wrapper {
     padding: 20px;
-
-    p {
-        font-family: var(--font);
-        font-size: 50px;
-        font-weight: bolder;
-        text-transform: uppercase;
-        text-align: center;
-    }
 }
 
 
