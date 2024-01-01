@@ -149,8 +149,12 @@ function renderProjects(projects) {
         projectCardTitle.textContent = projects[currentIndx].name;
         projectCardDescription.textContent = projects[currentIndx].description;
         projectCardLinks.innerHTML = `
-        <a class="button" href="${projects[currentIndx].github}" target="_blank">GitHub</a>
-        <a class="button" href="${projects[currentIndx].liveSite}" target="_blank">Live Site</a>
+        <a class="button" href="${projects[currentIndx].github}" target="_blank">GitHub<span class="material-icons">
+launch
+</span></a>
+        <a class="button" href="${projects[currentIndx].liveSite}" target="_blank">Live Site<span class="material-icons">
+launch
+</span></a>
         `;
     }
 
@@ -195,8 +199,27 @@ function renderCerts(cert) {
     certCard.classList.add("cert-card");
     certCard.innerHTML = `
     <img src="${cert.img}" class="cert-img">
-      <a class="button text-center" href="${cert.link}" target="_blank">  View Certification  </a>`;
+    `;
+
     document.querySelector(".certs-container").appendChild(certCard);
+
+    //event listener for mouse enter make the cert card with a clickable link overlay
+    certCard.addEventListener("mouseenter", function () {
+        certCard.innerHTML = `
+        <img src="${cert.img}" class="cert-img blur">
+          <a href="${cert.link}" target="_blank" class="cert-link cert-overlay">View Certificate <span class="material-icons">
+launch
+</span></a>
+        
+        `;
+    });
+
+    //event listener for mouse leave make the cert card not clickable
+    certCard.addEventListener("mouseleave", function () {
+        certCard.innerHTML = `
+        <img src="${cert.img}" class="cert-img">
+        `;
+    });
 }
 
 certifications.forEach((cert) => {
