@@ -33,7 +33,7 @@ let projects = [
         description: "Ducklister is a full stack web application that allows a niche community of jeep enthusiasts to share their love for rubber ducks. Users can register for a new account, edit their profile, list ducks they want to share, and engage with fellow duck lovers. Technologies used include HTML, CSS, JavaScript, Java, and MySQL. Ducklister was mapped using servlets, and JSPs were used to generate HTML pages. Prepared statements were used to prevent SQL injection, and BCrypt algorithm was used to hash passwords.",
         img: "img/preview/ducklister-mbp.jpeg",
         github: "https://github.com/Genesis-Luis-Jessica-Adlister/ducklister",
-        liveSite: ""
+        liveSite: "none"
     },
 
     {
