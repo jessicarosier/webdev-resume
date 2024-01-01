@@ -226,6 +226,139 @@ certifications.forEach((cert) => {
     renderCerts(cert);
 });
 
+let skills = [
+    {
+        name: "HTML",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+        type: "front-end"
+    },
+    {
+        name: "CSS",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+        type: "front-end"
+    },
+    {
+        name: "JavaScript",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+        type: "front-end"
+    },
+    {
+        name: "jQuery",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg",
+        type: "front-end"
+    },
+    {
+        name: "Bootstrap",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg",
+        type: "front-end"
+    },
+    {
+        name: "Java",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-plain.svg",
+        type: "back-end"
+    },
+    {
+        name: "mySQL",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+        type: "back-end"
+    },
+    {
+        name: "Spring Boot",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg",
+        type: "back-end"
+    },
+  
+    {
+        name: "GitHub",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+        type: "tools"
+    },
+    {
+        name: "NPM",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg",
+        type: "tools"
+    },
+    {
+        name: "Azure",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg",
+        type: "tools"
+    },
+    {
+        name: "AWS",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg",
+        type: "tools"
+    },
+    {
+        name: "Linux",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
+        type: "tools"
+    },
+    {
+        name: "VS Code",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
+        type: "tools"
+    }
+];
+
+//builds the skill cards in three columns
+let frontEndCol = document.createElement("div");
+frontEndCol.classList.add("col");
+frontEndCol.classList.add("skills-col");
+let backEndCol = document.createElement("div");
+backEndCol.classList.add("col");
+backEndCol.classList.add("skills-col");
+let toolsCol = document.createElement("div");
+toolsCol.classList.add("col");
+toolsCol.classList.add("skills-col");
+
+frontEndCol.innerHTML = `
+<h3 class="skills-col-title text-center">Front End</h3>
+<div class="front-end-skills wrap-skills">
+</div>
+`;
+
+backEndCol.innerHTML = `
+<h3 class="skills-col-title text-center">Back End</h3>
+<div class="back-end-skills wrap-skills">
+</div>
+`;
+
+toolsCol.innerHTML = `
+<h3 class="skills-col-title text-center">Tools</h3>
+<div class="tools wrap-skills">
+</div>
+`;
+
+function renderSkills(skill) {
+    let frontEndSkills = frontEndCol.querySelector(".front-end-skills");
+    let backEndSkills = backEndCol.querySelector(".back-end-skills");
+    let tools = toolsCol.querySelector(".tools");
+
+
+    let skillCard = document.createElement("div");
+    skillCard.classList.add("skill-card");
+    skillCard.innerHTML = `
+    <img src="${skill.icon}" class="skill-icon">
+    <p class="skill-name">${skill.name}</p>
+    `;
+    if (skill.type === "front-end") {
+        frontEndSkills.appendChild(skillCard);
+    } else if (skill.type === "back-end") {
+        backEndSkills.appendChild(skillCard);
+    } else {
+        tools.appendChild(skillCard);
+    }
+
+    const skillsContainer = document.querySelector(".skills-container");
+    skillsContainer.appendChild(frontEndCol);
+    skillsContainer.appendChild(backEndCol);
+    skillsContainer.appendChild(toolsCol);
+}
+
+skills.forEach((skill) => {
+    renderSkills(skill);
+});
+
 
 
 
