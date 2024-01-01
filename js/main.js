@@ -55,7 +55,8 @@ function renderProjects(projects) {
       </div>
     `;
 
-    if (projects.liveSite !== "") {
+    //if live site is not equal to none, add the live site button to the project card
+    if (projects.liveSite !== "none") {
         projectCard.querySelector(".project-links").innerHTML += `
         <a class="button" href="${projects.liveSite}" target="_blank">Live Site</a>
         `;
@@ -74,10 +75,16 @@ function renderProjects(projects) {
         <a class="button" href="${projects[currentIndx].github}" target="_blank">GitHub<span class="material-icons">
 launch
 </span></a>
-        <a class="button" href="${projects[currentIndx].liveSite}" target="_blank">Live Site<span class="material-icons">
+        `;
+
+        //if live site is  not equal to none, add the live site button to the project card
+        if (projects[currentIndx].liveSite !== "none") {
+            projectCardLinks.innerHTML += `
+            <a class="button" href="${projects[currentIndx].liveSite}" target="_blank">Live Site<span class="material-icons">
 launch
 </span></a>
-        `;
+            `;
+        }
     }
 
     setTimeout(function () {
